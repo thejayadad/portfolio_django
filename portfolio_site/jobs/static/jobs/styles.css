@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --title-color: #312f2f;
+    --text-color: #999999;
+    --second-color: #70c8d4;
+    --white-color: #fff;
+    /*------Font--------*/
+    --font-mon: "Montserrat", sans-serif;
+    --font-open: "Open Sans", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+
+
+}
+
+h2{
+    color: palevioletred;
+}
