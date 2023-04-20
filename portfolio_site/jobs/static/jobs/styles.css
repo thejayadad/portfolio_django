@@ -13,6 +13,39 @@
     --font-mon: "Montserrat", sans-serif;
     --font-open: "Open Sans", sans-serif;
     --font-roboto: "Roboto", sans-serif;
+    /*------Typography--------*/
+    --big-ofnt-size: 68px;
+    --fs-1: 48px;
+    --fs-2: 41px;
+    --fs-3: 34px;
+    --fs-4: 30px;
+    --fs-5: 22px;
+    --fs-6: 20px;
+    --fs-7: 19px;
+    --fs-8: 18px;
+    --fs-9: 16px;
+    --fs-10: 15px;
+    --fs-11: 14px;
+    --small-font-size: 12px;
+    /*------Typography--------*/
+    --fw-3: 300;
+    --fw-4: 400;
+    --fw-5: 500;
+    --fw-6: 600;
+    --fw-7: 700;
+    --fw-8: 800;
+    --fw-9: 900;
+
+    /*------Shadow--------*/
+    --shadow: 2px 0 50px hsla(0,0%,0%,.2);
+    /*------Spacing--------*/
+    --section-padding: 80px;
+
+    /*------Transition--------*/
+    --transition: .25 ease;
+    --cubic-in: cubic-bezier(.51,.03,.64,.28);
+    --cubic-in: cubic-bezier(.33,.85,.04,.96);
+
 
 
 }
