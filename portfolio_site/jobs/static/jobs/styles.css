@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 :root{
     --title-color: #312f2f;
@@ -50,6 +45,105 @@
 
 }
 
-h2{
-    color: palevioletred;
+
+    /*------Base--------*/
+
+    *::before,
+    *:after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    li{
+        list-style: none;
+    }
+
+    a,
+    img,
+    input,
+    span,
+    button,
+    i{
+        display: block;
+    }
+
+    input,
+    button{
+        font: inherit;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    button,
+    li{
+        cursor: pointer;
+    }
+
+    textarea{
+        resize: none;
+    }
+    html{
+        scroll-behavior: smooth;
+        font-family: sans-serif;
+        line-height: 1.15;
+    }
+
+    body{
+        font-family: var(--font-roboto);
+        font-size: 1rem;
+        line-height: 1.5;
+        background-color: var(--white-color);
+        color: var(--text-color);
+    }
+
+
+/*------Reusable--------*/
+
+.container{
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+.section{
+    padding-block: var(--section-padding);
+}
+
+h1,
+h2,h3,h4,h5{
+    font-family: var(--font-mon);
+    color: (--title-color);
+    font-weight: var(--fw-5);
+    list-style: 1.1;
+    margin-bottom: .5rem;
+}
+h1{
+    line-height: 1.1;
+}
+h3{
+    font-size: var(--fs-4);
+}
+h4{
+    font-size: var(--fs-4);
+    margin: 22px 0;
+}
+
+.section-title{
+    font-size: var(--big-ofnt-size);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-weight: var(--fw-6);
 }
