@@ -54,24 +54,10 @@
         <section class="grid-portfolio">
             <div class="container">
                 <div class="grid-gallery">
-                    <div class="grid-item">
-                        <img src="https://images.pexels.com/photos/1707819/pexels-photo-1707819.jpeg?auto=compress&cs=tinysrgb&w=600" alt="pic" >
-                    </div>
-                    <div class="grid-item">
-                        <img src="https://images.pexels.com/photos/1707819/pexels-photo-1707819.jpeg?auto=compress&cs=tinysrgb&w=600" alt="pic" >
-                    </div>
-                    <div class="grid-item">
-                        <img src="https://images.pexels.com/photos/1707819/pexels-photo-1707819.jpeg?auto=compress&cs=tinysrgb&w=600" alt="pic" >
-                    </div>
-                    <div class="grid-item">
-                        <img src="https://images.pexels.com/photos/1707819/pexels-photo-1707819.jpeg?auto=compress&cs=tinysrgb&w=600" alt="pic" >
-                    </div>
-                    <div class="grid-item">
-                        <img src="https://images.pexels.com/photos/1707819/pexels-photo-1707819.jpeg?auto=compress&cs=tinysrgb&w=600" alt="pic" >
-                    </div>
-                    <div class="grid-item">
-                        <img src="https://images.pexels.com/photos/1707819/pexels-photo-1707819.jpeg?auto=compress&cs=tinysrgb&w=600" alt="pic" >
-                    </div>
+                    {% for job in jobs.all%}
+                    {{ job.summary}}
+                    {% endfor%}
+          
                 </div>
             </div>
         </section>
