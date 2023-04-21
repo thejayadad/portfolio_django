@@ -1,0 +1,4 @@
+
+release: python manaage.py migrate
+web: gunicorn portfolio_django.wsgi --log-files=-
+
