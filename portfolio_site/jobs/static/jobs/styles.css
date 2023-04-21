@@ -180,10 +180,47 @@ h4{
     justify-content: space-between;
     align-items: center;
 }
-
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .nav_menu, .nav_list{
     display: flex;
     justify-content: space-evenly;
     width: 190%;
+}
+/*------Filter--------*/
+.filter-grid-portfolio{
+    margin-bottom: 10px;
+}
+.filter-list{
+    text-align: center;
+    font-family: var(--font-mon);
+    font-weight: var(--fw-5);
+    color: var(--title-color);
+    margin: 10px 0;
+    font-size: var(--fs-10);
+}
+.filter-list li{
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.filter-list li::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    display: block;
+    background-color: var(--second-color);
+    height: 2px;
+    transition: var(--transition);
+}
+
+.filter-list li.is-active::before, .filter-grid-portfolio li:hover::before{
+    width: 100%;
 }
