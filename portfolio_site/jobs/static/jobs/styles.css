@@ -185,7 +185,7 @@ h4{
 .nav_menu, .nav_list{
     display: flex;
     justify-content: space-evenly;
-    width: 190%;
+    width: 100%;
 }
 /*------Filter--------*/
 .filter-grid-portfolio{
@@ -227,18 +227,23 @@ h4{
 .grid-gallery{
     width: 100%;
     padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    grid-auto-flow: dense;
+    padding: 1rem;
+}
+img{
+    width: 100%;
 }
 .grid-item{
-    float: left;
-    position: relative;
-    padding: 10px 10px;
+
 }
-.grid-item-rollover{
+
+/* .grid-item-rollover{
     position: absolute;
     z-index: 4;
     background-color: rgba(255, 255,255, .8);
-    width: calc(100%-80px);
-    height: calc(100% -80px);
     margin-inline: auto;
     display: grid;
     align-items: center;
@@ -248,7 +253,7 @@ h4{
     left: 40px;
     opacity: 0;
     transition: opacity .5s ease;
-}
+} */
 .grid-item:hover .grid-item-rollover{
     opacity: 1;
 }
@@ -264,8 +269,44 @@ h4{
     color: var(--second-color);
     font-weight: var(--fw-4);
     letter-spacing: .8;
+ }
+
+ /*------Footer--------*/
+ .footer{
+    padding: 40px 0;
+    border-top: 1px solid rgba(119,119,119,.5);
+    text-align: center;
+ }
+ .footer-box h4{
+    font-family: var(--font-mon);
+    font-weight: var(--fw-6);
+    font-size: 18px;
+    margin: 0 0 .5rem 0;
+ }
+ .footer-box p{
+    font-size: var(--fs-11);
+    font-family: var(--font-roboto);
+    font-weight: 300;
+    color: #777777;
+    margin-bottom: 1rem;
+ }
+.footer-box .email{
+    font-size: 12px;
 }
 
+.social-list{
+    margin-top: 18px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-list li{
+    color: #312f2f;
+}
+/*
 @media screen and (min-width: 576px){
     .container{
         width: 540px;
@@ -277,8 +318,8 @@ h4{
     .filter-list li{
         margin: 0 20px;
     }
-}
-
+} */
+/*
 @media screen and (min-width: 768px){
     .container{
         width: 720px;
@@ -288,12 +329,7 @@ h4{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .grid-item:nth-child(2){
-        grid-row: 1 / span 2;
-    }
-    .grid-item:nth-child(6){
-        grid-row: 4 / span 2;
-    }
+
 }
 
 @media screen and (min-width: 992px){
@@ -305,4 +341,4 @@ h4{
         padding: 45px 30px;
 
     }
-}
+} */
