@@ -147,3 +147,43 @@ h4{
     letter-spacing: 1px;
     font-weight: var(--fw-6);
 }
+.section-subtitle{
+    font-family: var(--font-roboto);
+    font-weight: var(--fw-3);
+    font-size: var(--fs-7);
+    color: var(--text-color);
+    line-height: 25px;
+}
+.section-subtitle b{
+    font-weight: var(--fw-4);
+    color: var(--second-color);
+    letter-spacing: .2px;
+}
+
+.img-banner{
+    background-size: cover;
+    background-position: center center;
+}
+
+/*------Header--------*/
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-block: .5rem 1rem;
+    z-index: 4;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav_menu, .nav_list{
+    display: flex;
+    justify-content: space-evenly;
+    width: 190%;
+}
