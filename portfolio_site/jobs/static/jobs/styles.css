@@ -180,11 +180,7 @@ h4{
     justify-content: space-between;
     align-items: center;
 }
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .nav_menu, .nav_list{
     display: flex;
@@ -202,6 +198,7 @@ h4{
     color: var(--title-color);
     margin: 10px 0;
     font-size: var(--fs-10);
+
 }
 .filter-list li{
     display: inline-block;
@@ -210,6 +207,7 @@ h4{
     border-bottom: 2px solid transparent;
     cursor: pointer;
 }
+
 
 .filter-list li::before{
     position: absolute;
@@ -223,4 +221,88 @@ h4{
 
 .filter-list li.is-active::before, .filter-grid-portfolio li:hover::before{
     width: 100%;
+}
+
+/*------Portfolio--------*/
+.grid-gallery{
+    width: 100%;
+    padding-top: 40px;
+}
+.grid-item{
+    float: left;
+    position: relative;
+    padding: 10px 10px;
+}
+.grid-item-rollover{
+    position: absolute;
+    z-index: 4;
+    background-color: rgba(255, 255,255, .8);
+    width: calc(100%-80px);
+    height: calc(100% -80px);
+    margin-inline: auto;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    top: 40px;
+    left: 40px;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+.grid-item:hover .grid-item-rollover{
+    opacity: 1;
+}
+.titleinfo{
+    font-family: var(--font-mon);
+    font-size: var(--fs-5);
+    font-weight: var(--fw-5);
+    color: var(--title-color);
+}
+
+.tagsinfo{
+    font-family: var(--font-roboto);
+    color: var(--second-color);
+    font-weight: var(--fw-4);
+    letter-spacing: .8;
+}
+
+@media screen and (min-width: 576px){
+    .container{
+        width: 540px;
+        max-width: 100%;
+    }
+    .filter-list{
+        --fs-10: 18px
+    }
+    .filter-list li{
+        margin: 0 20px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        width: 720px;
+        max-width: 100%;
+    }
+    .grid-gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-item:nth-child(2){
+        grid-row: 1 / span 2;
+    }
+    .grid-item:nth-child(6){
+        grid-row: 4 / span 2;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container{
+        width: 960px;
+        max-width: 100%;
+    }
+    .header{
+        padding: 45px 30px;
+
+    }
 }
