@@ -108,6 +108,7 @@
         line-height: 1.5;
         background-color: var(--white-color);
         color: var(--text-color);
+        overflow-x: hidden;
     }
 
 
